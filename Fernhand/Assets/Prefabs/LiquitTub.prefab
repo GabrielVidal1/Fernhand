@@ -6856,7 +6856,7 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 1
+      mode: 0
       spread: 0
       speed:
         serializedVersion: 2
@@ -6917,7 +6917,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 300
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -7355,8 +7355,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.13725491, g: 0.37254903, b: 0.19215688, a: 0}
-        key1: {r: 0.1753172, g: 0.40023068, b: 0.22779702, a: 0.92941177}
+        key0: {r: 0.24688786, g: 0.6132076, b: 0.17644179, a: 0}
+        key1: {r: 0.995283, g: 1, b: 0.9963443, a: 0.92941177}
         key2: {r: 1, g: 1, b: 1, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}

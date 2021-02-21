@@ -8,15 +8,6 @@ public class Door : MonoBehaviour
     private Animator _animator;
 
     private bool _open;
-    public bool Open
-    {
-        get => _open;
-        set
-        {
-            _animator.SetBool("Open", value);
-            _open = value;
-        }
-    }
 
     private void Start()
     {
@@ -25,11 +16,22 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Open = true;
+        Open(true);
     }
     
     private void OnTriggerExit(Collider other)
     {
-        Open = false;
+        Open(false);
+    }
+
+    public void Open(bool value)
+    {
+        _open = value;
+        _animator.SetBool("Open", value);
+    }
+
+    public void ToggleOpen()
+    {
+        Open(!_open);
     }
 }

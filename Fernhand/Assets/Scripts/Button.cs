@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
+[System.Serializable]
+public class InteractEvent : UnityEvent {}
 
 public class Button : Interactible
 {
-    public Door targetDoor;
-
-    [SerializeField] private bool canCloseDoor;
+    [SerializeField] private InteractEvent _event;
     
     protected override void Interact()
     {
-        print("test");
-        targetDoor.Open = !(targetDoor.Open && canCloseDoor);
+        print(name + " Interact");
+        _event.Invoke();
     }
 }
