@@ -1,15 +1,39 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\gvida\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\gvida\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Fernhand.-258757309.00" t="ExcludeRecursive" />
     <e p="D:\PROGRAMMATION\UNITY_DATA\Unity Projects\FERNHAND\FERNHAND" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="MaxP" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="_Source" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Resources" t="Include">
+                  <e p="Blur.shader" t="Include" />
+                  <e p="DirtyLensFlare.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="DirtyLensFlare.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DirtyLensFlareEditor.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="Button.cs" t="Include" />
           <e p="Door.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Interactible.cs" t="Include" />
+          <e p="KillZone.cs" t="Include" />
+          <e p="MainCanvas.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="SmallZone.cs" t="Include" />
         </e>
       </e>
       <e p="Fernhand.sln" t="IncludeFlat" />

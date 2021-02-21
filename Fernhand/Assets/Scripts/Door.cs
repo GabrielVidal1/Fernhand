@@ -6,7 +6,17 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     private Animator _animator;
-    private static readonly int Open = Animator.StringToHash("Open");
+
+    private bool _open;
+    public bool Open
+    {
+        get => _open;
+        set
+        {
+            _animator.SetBool("Open", value);
+            _open = value;
+        }
+    }
 
     private void Start()
     {
@@ -15,13 +25,11 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-            _animator.SetBool(Open, true);
+        Open = true;
     }
     
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
-            _animator.SetBool(Open, false);
+        Open = false;
     }
 }
